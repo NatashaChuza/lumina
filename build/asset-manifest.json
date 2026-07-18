@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.25116b69.css",
+    "main.js": "/static/js/main.ed72f2ab.js",
+    "static/js/455.a1064495.chunk.js": "/static/js/455.a1064495.chunk.js",
+    "static/js/453.484b8427.chunk.js": "/static/js/453.484b8427.chunk.js",
+    "static/media/AlexBrush-Regular.ttf": "/static/media/AlexBrush-Regular.2931994a26f7d46dab66.ttf",
+    "static/media/necklace.png": "/static/media/necklace.7c6e92c3ab56f219850d.png",
+    "static/media/earring.png": "/static/media/earring.d9f5d1741ae0fbc28c39.png",
+    "static/media/star-bracelet.png": "/static/media/star-bracelet.5f2506313043139388c3.png",
+    "static/media/gem-cartier.png": "/static/media/gem-cartier.f1d511c0e2fb761b7eb9.png",
+    "static/media/Quintessential-Regular.ttf": "/static/media/Quintessential-Regular.80b1583bb6be49192fa3.ttf",
+    "static/media/ring.png": "/static/media/ring.75fd2edcd4b6f139ac3a.png",
+    "static/media/logo-1.png": "/static/media/logo-1.2327599a3dd18fc12fd5.png",
+    "index.html": "/index.html",
+    "main.25116b69.css.map": "/static/css/main.25116b69.css.map",
+    "main.ed72f2ab.js.map": "/static/js/main.ed72f2ab.js.map",
+    "455.a1064495.chunk.js.map": "/static/js/455.a1064495.chunk.js.map",
+    "453.484b8427.chunk.js.map": "/static/js/453.484b8427.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25116b69.css",
+    "static/js/main.ed72f2ab.js"
+  ]
+}
