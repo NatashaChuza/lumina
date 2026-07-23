@@ -107,10 +107,10 @@ exports.getProducts = async (req,res) => {
 exports.viewCount = async (req, res) =>{
     try{
 
-        //const { obj} = req.body;
-        //console.log(req.body)
+        const {name, view} = req.body;
+        console.log(req.body)
         //console.log(req)
-        console.log(req)
+        console.log(name)
         //let object = JSON.parse(obj)
 
         //const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
