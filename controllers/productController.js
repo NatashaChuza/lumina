@@ -108,8 +108,10 @@ exports.viewCount = async (req, res) =>{
     try{
 
         //const { obj} = req.body;
-        console.log(req.body)
-        let object = JSON.parse(obj)
+        //console.log(req.body)
+        //console.log(req)
+        console.log(req)
+        //let object = JSON.parse(obj)
 
         //const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
         //const docRef = await db.collection("views").add(view);
