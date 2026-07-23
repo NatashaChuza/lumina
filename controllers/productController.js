@@ -108,13 +108,9 @@ exports.viewCount = async (req, res) =>{
     try{
 
         const {name, view} = req.body;
-        console.log(req.body)
-        //console.log(req)
-        console.log(name)
-        //let object = JSON.parse(obj)
 
-        //const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
-        //const docRef = await db.collection("views").add(view);
+        const viewObj = { name: name, type: view, viewedAt: serverTimestamp()}
+        const docRef = await db.collection("views").add(viewObj);
 
     }catch(error){
         console.error("Get product error:", error);
