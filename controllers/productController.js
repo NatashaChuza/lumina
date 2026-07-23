@@ -107,12 +107,12 @@ exports.getProducts = async (req,res) => {
 exports.viewCount = async (req, res) =>{
     try{
 
-        const { obj} = req.body;
+        //const { obj} = req.body;
         console.log(req.body)
         let object = JSON.parse(obj)
 
-        const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
-        const docRef = await db.collection("views").add(view);
+        //const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
+        //const docRef = await db.collection("views").add(view);
 
     }catch(error){
         console.error("Get product error:", error);
