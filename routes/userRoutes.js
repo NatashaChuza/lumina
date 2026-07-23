@@ -34,4 +34,9 @@ router.post(
     productController.checkout
 )
 
+router.post(
+    "/views",
+    productController.viewCount
+)
+
 module.exports = router;

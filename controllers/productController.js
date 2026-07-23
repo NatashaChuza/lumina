@@ -104,6 +104,25 @@ exports.getProducts = async (req,res) => {
     }
 }
 
+exports.viewCount = async (req, res) =>{
+    try{
+
+        const { obj} = req.aparams;
+        let object = JSON.parse(obj)
+
+        const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
+        const docRef = await db.collection("views").add(view);
+
+    }catch(error){
+        console.error("Get product error:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Failed to fetch product.",
+            error: error.message
+        });
+    }
+}
+
 
 
 exports.getProductById = async (req,res) =>{
