@@ -107,7 +107,8 @@ exports.getProducts = async (req,res) => {
 exports.viewCount = async (req, res) =>{
     try{
 
-        const { obj} = req.aparams;
+        const { obj} = req.body;
+        console.log(req.body)
         let object = JSON.parse(obj)
 
         const view = { name: object.name, type: obj.view, viewedAt: serverTimestamp()}
