@@ -39,4 +39,9 @@ router.post(
     productController.viewCount
 )
 
+router.get(
+    "/getViews", 
+    productController.getViews
+)
+
 module.exports = router;

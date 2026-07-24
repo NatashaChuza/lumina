@@ -74,6 +74,30 @@ exports.createProduct = async (req,res) => {
     }
 }
 
+exports.getViews = async( req,res) =>{
+    try{
+
+        const snapshot = await db.collection("views")
+                         .get();
+        const views = snapshot.docs.map((doc)=>({
+            id: doc.id,
+            ...doc.data()
+        }))
+
+        return res.status(200).json({
+            success:true,
+            views: views
+        })
+    }catch(error){
+        console.error("Fetch products error:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Failed to fetch products",
+            error: error.message
+        });
+    }
+}
+
 exports.getProducts = async (req,res) => {
     try{
 
