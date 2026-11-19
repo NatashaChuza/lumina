@@ -127,7 +127,7 @@ async function emailOrder(order) {
       text,
     });
   } catch (e) {
-    console.error('order email failed:', e.message);
+    console.error(`order email failed for ${order.orderNumber} (order is saved in Firestore):`, e.message);
   }
 }
 
@@ -207,11 +207,13 @@ exports.createOrder = async (req, res) => {
       createdAt: new Date(),
     };
 
-    // Stock is held for paid, unverified and cash orders. Pending payments
-    // wait until you confirm them in Lenco.
-    const reduceStock = ['paid', 'paid-unverified', 'paid-wrong-amount', 'awaiting-cash'].includes(status);
+    // Stock is held for paid, unverified, could-not-check and cash orders.
+    // Pending payments wait until you confirm them in Lenco.
+    const reduceStock = ['paid', 'paid-unverified', 'paid-wrong-amount', 'payment-check-failed', 'awaiting-cash'].includes(status);
     const saved = await saveOrder(docId, order, { reduceStock });
-    if (!saved.__alreadySaved) await emailOrder(saved);
+    // Email is sent in the background so the customer never waits on it.
+    // The order is already saved in Firestore (sales) either way.
+    if (!saved.__alreadySaved) emailOrder(saved);
 
     return res.status(201).json({ success: true, order: publicOrder(saved) });
   } catch (error) {

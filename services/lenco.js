@@ -15,10 +15,21 @@ async function verifyCollection(reference) {
     return { verified: false, status: 'unverified' };
   }
 
-  const res = await fetch(`${API_URL}/collections/status/${encodeURIComponent(reference)}`, {
-    headers: { Authorization: `Bearer ${key}`, Accept: 'application/json' },
-  });
-  const body = await res.json().catch(() => ({}));
+  let res;
+  let body;
+  try {
+    res = await fetch(`${API_URL}/collections/status/${encodeURIComponent(reference)}`, {
+      headers: { Authorization: `Bearer ${key}`, Accept: 'application/json' },
+      signal: AbortSignal.timeout(15000),
+    });
+    body = await res.json().catch(() => ({}));
+  } catch (err) {
+    // Network problem reaching Lenco. The order is still saved (as
+    // "payment-check-failed") so a paid order is never lost.
+    const cause = err.cause ? ` (${err.cause.code || err.cause.message})` : '';
+    console.error(`Could not reach Lenco to verify ${reference}: ${err.message}${cause}`);
+    return { verified: false, status: 'lookup-failed', error: err.message };
+  }
   if (!res.ok || !body || !body.data) {
     return { verified: false, status: 'lookup-failed', raw: body };
   }

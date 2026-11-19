@@ -1,23 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.46b8000f.css",
-    "main.js": "/static/js/main.80b60563.js",
-    "static/js/977.f071f313.chunk.js": "/static/js/977.f071f313.chunk.js",
-    "static/js/455.a1064495.chunk.js": "/static/js/455.a1064495.chunk.js",
-    "static/js/453.484b8427.chunk.js": "/static/js/453.484b8427.chunk.js",
+    "main.css": "/static/css/main.e3753b36.css",
+    "main.js": "/static/js/main.edbbe6de.js",
+    "static/js/310.4b30f90e.chunk.js": "/static/js/310.4b30f90e.chunk.js",
+    "static/js/699.82f180ea.chunk.js": "/static/js/699.82f180ea.chunk.js",
+    "static/js/298.d25d9d44.chunk.js": "/static/js/298.d25d9d44.chunk.js",
     "static/media/girl.png": "/static/media/girl.22ed879ba284c1f4abc8.png",
     "static/media/AlexBrush-Regular.ttf": "/static/media/AlexBrush-Regular.2931994a26f7d46dab66.ttf",
     "static/media/Quintessential-Regular.ttf": "/static/media/Quintessential-Regular.80b1583bb6be49192fa3.ttf",
     "static/media/logo-wordmark.png": "/static/media/logo-wordmark.a43be6f2239f3db42a83.png",
-    "index.html": "/index.html",
-    "main.46b8000f.css.map": "/static/css/main.46b8000f.css.map",
-    "main.80b60563.js.map": "/static/js/main.80b60563.js.map",
-    "977.f071f313.chunk.js.map": "/static/js/977.f071f313.chunk.js.map",
-    "455.a1064495.chunk.js.map": "/static/js/455.a1064495.chunk.js.map",
-    "453.484b8427.chunk.js.map": "/static/js/453.484b8427.chunk.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.46b8000f.css",
-    "static/js/main.80b60563.js"
+    "static/css/main.e3753b36.css",
+    "static/js/main.edbbe6de.js"
   ]
 }
