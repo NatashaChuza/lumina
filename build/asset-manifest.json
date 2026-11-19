@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bab2b1d.css",
-    "main.js": "/static/js/main.e6044170.js",
+    "main.css": "/static/css/main.46b8000f.css",
+    "main.js": "/static/js/main.80b60563.js",
+    "static/js/977.f071f313.chunk.js": "/static/js/977.f071f313.chunk.js",
     "static/js/455.a1064495.chunk.js": "/static/js/455.a1064495.chunk.js",
     "static/js/453.484b8427.chunk.js": "/static/js/453.484b8427.chunk.js",
+    "static/media/girl.png": "/static/media/girl.22ed879ba284c1f4abc8.png",
     "static/media/AlexBrush-Regular.ttf": "/static/media/AlexBrush-Regular.2931994a26f7d46dab66.ttf",
-    "static/media/necklace.png": "/static/media/necklace.7c6e92c3ab56f219850d.png",
-    "static/media/earring.png": "/static/media/earring.d9f5d1741ae0fbc28c39.png",
-    "static/media/star-bracelet.png": "/static/media/star-bracelet.5f2506313043139388c3.png",
-    "static/media/gem-cartier.png": "/static/media/gem-cartier.f1d511c0e2fb761b7eb9.png",
     "static/media/Quintessential-Regular.ttf": "/static/media/Quintessential-Regular.80b1583bb6be49192fa3.ttf",
-    "static/media/ring.png": "/static/media/ring.75fd2edcd4b6f139ac3a.png",
-    "static/media/logo-1.png": "/static/media/logo-1.2327599a3dd18fc12fd5.png",
+    "static/media/logo-wordmark.png": "/static/media/logo-wordmark.a43be6f2239f3db42a83.png",
     "index.html": "/index.html",
-    "main.8bab2b1d.css.map": "/static/css/main.8bab2b1d.css.map",
-    "main.e6044170.js.map": "/static/js/main.e6044170.js.map",
+    "main.46b8000f.css.map": "/static/css/main.46b8000f.css.map",
+    "main.80b60563.js.map": "/static/js/main.80b60563.js.map",
+    "977.f071f313.chunk.js.map": "/static/js/977.f071f313.chunk.js.map",
     "455.a1064495.chunk.js.map": "/static/js/455.a1064495.chunk.js.map",
     "453.484b8427.chunk.js.map": "/static/js/453.484b8427.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bab2b1d.css",
-    "static/js/main.e6044170.js"
+    "static/css/main.46b8000f.css",
+    "static/js/main.80b60563.js"
   ]
 }

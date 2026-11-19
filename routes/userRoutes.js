@@ -3,6 +3,7 @@ const router = express.Router();
 const controller = require("../controllers/test")
 const upload = require('../middleware/upload')
 const productController = require('../controllers/productController')
+const orderController = require('../controllers/orderController')
 
 router.get('/', (req, res) => {
     res.json({ message: 'User route works!' });
@@ -29,10 +30,13 @@ router.get(
     productController.getProductById
 );
 
-router.post(
-    "/sales",
-    productController.checkout
-)
+// Checkout: price check, then order after payment (verified with Lenco).
+router.post("/checkout/quote", orderController.quote)
+router.post("/orders", orderController.createOrder)
+
+// The old /sales endpoint recorded sales without checking payment. It now
+// goes through the same verified order flow.
+router.post("/sales", orderController.createOrder)
 
 router.post(
     "/views",
